@@ -30,6 +30,30 @@
 
 
 	<body id="home">
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		     https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+		<script>
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+		    apiKey: "AIzaSyBmcfbXEF2f3rf2Y05MiGPmQeiP5lTYCVE",
+		    authDomain: "tpe-micropesanteur.firebaseapp.com",
+		    databaseURL: "https://tpe-micropesanteur.firebaseio.com",
+		    projectId: "tpe-micropesanteur",
+		    storageBucket: "tpe-micropesanteur.appspot.com",
+		    messagingSenderId: "898019375968",
+		    appId: "1:898019375968:web:1740762e8c96ce3e453c05",
+		    measurementId: "G-0N98Q4991K"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+		</script>
+		
 		<div class="w3-top">
 			<div class="w3-bar w3-black w3-card">
 				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="navPhone()" title="Menu de navigation"><i class="fa fa-bars"></i></a>
