@@ -1,0 +1,1583 @@
+<%- include('../inc/header') %>
+		<!-- MATH ML REFERENCE : https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference -->
+
+
+		<!-- Header -->
+		<header class="w3-theme" id="myHeader">
+			<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+
+			<div class="image-background-1 w3-center">
+				<br />
+				<h4 class="global-title w3-animate-bottom">PARTIE I</h4>
+				<i style="color: #cbcbcb;">
+					<h1 class="w3-xlarge w3-animate-bottom">L’impact de l’espace sur la santé et sur l’équipement</h1>
+				</i>
+				<br />
+			</div>
+		</header>
+		<!-- Fin du header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- SOMMAIRE DE LA PARTIE I -->
+		<div class="w3-container w3-padding-32" id="sommaire">
+			<h3 class="main-title w3-center">
+				SOMMAIRE :
+			</h3>
+
+			<br />
+			<div class="w3-row-padding w3-center w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card w3-container" style="min-height: 220px">
+						<a class="w3-hover-text-blue-grey" href="#partie_A">
+							<h3 class="underlined">Partie A</h3>
+						</a>
+						<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size:90px; cursor: pointer;" onclick="document.location = '#partie_A'"></i>
+						<p class="main-text w3-content">Spationaute, astronaute, cosmonaute, ...</p>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card w3-container" style="min-height: 220px">
+						<a class="w3-hover-text-blue-grey" href="#partie_B">
+							<h3 class="underlined">Partie B</h3>
+						</a>
+						<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size:90px; cursor: pointer;" onclick="document.location = '#partie_B'"></i>
+						<p class="main-text w3-content">Qu’est ce-que la micropesanteur ?</p>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card w3-container" style="min-height: 220px">
+						<a class="w3-hover-text-blue-grey" href="#partie_C">
+							<h3 class="underlined">Partie C</h3>
+						</a>
+						<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size:90px; cursor: pointer;" onclick="document.location = '#partie_C'"></i>
+						<p class="main-text w3-content">Les effets de la micropesanteur sur l’organisme</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="w3-row-padding w3-center w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card w3-container" style="min-height: 220px">
+						<a class="w3-hover-text-blue-grey" href="#partie_D">
+							<h3 class="underlined">Partie D</h3>
+						</a>
+						<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size:90px; cursor: pointer;" onclick="document.location = '#partie_D'"></i>
+						<p class="main-text w3-content">L'absence d’atmosphère</p>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card w3-container" style="min-height: 220px">
+						<a class="w3-hover-text-blue-grey" href="#partie_E">
+							<h3 class="underlined">Partie E</h3>
+						</a>
+						<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size:90px; cursor: pointer;" onclick="document.location = '#partie_E'"></i>
+						<p class="main-text w3-content">Les dangers du Soleil et le champ magnétique terrestre</p>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card w3-container" style="min-height: 220px">
+						<a class="w3-hover-text-blue-grey" href="#partie_F">
+							<h3 class="underlined">Partie F</h3>
+						</a>
+						<i class=class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size:90px; cursor: pointer;" onclick="document.location = '#partie_F'"></i>
+						<p class="main-text w3-content">Conclusion</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DU SOMMAIRE DE LA PARTIE I -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- PARTIE A. Spationaute, astronaute, cosmonaute, ... -->
+		<div class="w3-container w3-padding-32" id="partie_A">
+			<h3 class="main-title w3-center">
+				A. Spationaute, astronaute, cosmonaute, ...
+			</h3>
+
+			<p class="main-text w3-content">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En France, <b>quatres termes</b> sont régulièrement utilisés afin de <b>nommer une personne qui voyage dans l’espace</b>.
+
+				<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cependant, ces mots désignent des <b>voyageurs</b> spatiaux provenant de <b>différents pays</b> (<i>passez votre curseur sur les drapeaux pour voir ces termes</i>) :
+			</p>
+
+			<div class="w3-row-padding w3-center w3-margin-top">
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/cosmonaute.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>COSMONAUTE</h3>
+							<p>
+								<b>Russie</b> : vient de <i>космонавт</i> (à prononcer <i>kosmonavt</i>) en Russe.
+								<br />
+							</p>
+							<i class="copyright"><s>&copy;</s>Domaine Public - Drapeau russe - <a href="https://fr.wikipedia.org/wiki/Drapeau_de_la_Russie#/media/File:Flag_of_Russia.svg">Wikipedia</a></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/astronaute.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>ASTRONAUTE</h3>
+							<p>
+								<b>États-Unis</b> : vient de <i>astronaut</i> composé du grec <i>astron</i> (<i>étoile</i>) et <i>nautus</i> (<i>navigateur</i>).
+								<br />Ce terme est celui standart, que nous utiliserons donc dans ce TPE de manière à ce qu’il <b>concerne tous les voyageurs de l’espace</b>, peu importe leur nationalité.
+								<br />
+							</p>
+							<i class="copyright"><s>&copy;</s>Domaine Public - Drapeau États-Unien - <a href="https://fr.wikipedia.org/wiki/%C3%89tats-Unis#/media/File:Flag_of_the_United_States.svg">Wikipedia</a></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/spationaute.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>SPATIONAUTE</h3>
+							<p>
+								<b>France</b> : terme créé pour justifier une <i>autonomie française</i> lors des premières missions spatiales.
+								<br />
+							</p>
+							<i class="copyright"><s>&copy;</s>Domaine Public - Drapeau français - <a href="https://fr.wikipedia.org/wiki/France#/media/File:Flag_of_France.svg">Wikipedia</a></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/taikonaute.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>TAÏKONAUTE</h3>
+							<p>
+								<b>Chine</b> : terme moins utilisé, qui vient de <i>tàikōngrén</i> composé de <i>tàikōng</i> (<i>espace, cosmos</i>) et <i>rén</i> (<i>homme</i>) en chinois.
+							</p>
+							<i class="copyright"><s>&copy;</s>Domaine Public - Drapeau chinois - <a href="https://fr.wikipedia.org/wiki/Drapeau_de_la_R%C3%A9publique_populaire_de_Chine#/media/File:Flag_of_the_People%27s_Republic_of_China.svg">Wikipedia</a></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FIN PARTIE A. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- PARTIE B. Qu'est ce que la micropesanteur ? -->
+		<div class="w3-content w3-container w3-padding-64" id="partie_B">
+			<h3 class="main-title w3-center">
+				B. Qu'est ce que la micropesanteur ?
+			</h3>
+
+
+
+			<!-- Introduction -->
+			<div class="sub-partie">
+				<p class="main-text w3-content" style="padding-top: 13px;">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous employons souvent à tort le terme <b><i>microgravité</i></b> à la place de <b><i>micropesanteur</i></b>. Un corps est en micropesanteur lorsque l’ensemble des forces gravitationnelles s’exerçant sur lui sont très faibles, par rapport à la gravité de la Terre.
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Par conséquent, la microgravité est un point de l’espace où l’effet des forces de gravitation est très faible du fait d’un <b>éloignement</b> par rapport à un corps massif ou à cause de la <b>compensation des influences gravitationnelles de plusieurs corps massifs</b> (<i>comme par exemple, un point de Lagrange aussi appelé point de libration, illustré sur le schéma ci-dessous</i>).
+				</p>
+			</div>
+			<!-- Fin de l'Introduction -->
+
+
+
+			<!-- Point de Lagrange -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Point de Lagrange :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soit une planète de la masse de la Terre \(m_1\) et une de celle de Mars \(m_2\) ainsi qu’un corps d’une masse \(m_x\) séparé de l’équivalent de la Terre par une distance \(d_1\) et séparé de l’équivalent de Mars par une distance \(d_2\).
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous cherchons à calculer la masse <b>\(m_x\)</b> du corps recherché afin qu’il soit situé à l’intersection de deux champs gravitationnels et donc où les <b>effets de la gravitation soient quasi nuls, comme illustré sur le schéma ci-dessous</b>.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/lagrange_1.png" style="width: 80%; display: block; margin-left: 10%;">
+
+					<div class="img-description" style="width: 80%; margin-left: 10%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Exemple du point de Lagrange 1 - <a href="/imgs/lagrange_1.png">Tpe-Micropesanteur</a></i>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D’après la loi universelle de la <b>gravitation de Newton</b>, nous avons :
+					$$  F = G \frac{m_1 \times m_2}{d^2}  $$
+					$$  G \frac{m_1 \times m_x}{d_1^2} = G \frac{m_x \times m_2}{d_2^2}  $$
+					$$  m_1 \times m_x \times d_2^2 = m_2 \times m_x \times d_1^2  $$
+					$$  10^{25} \times m_x \times (10^5)^2 \simeq 10^{24} \times m_x \times (10^6)^2  $$
+					$$  m_x \simeq 10^{10} \text{ kg}  $$
+				</p>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un objet de <b>\(10^{10} \text{ kg}\)</b> serait donc totalement immobile et donc en état de microgravité. Cette masse équivaut <b>à peu près</b> à la <b>comète Churyumov Gerasimenko</b>, étudiée notamment lors de la mission Rosetta, qui est de l’ordre de grandeur de \(10^{12} \text{ kg}\). Nous pouvons donc compléter le schéma suivant :
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/lagrange_2.png" style="width: 80%; display: block; margin-left: 10%;">
+
+					<div class="img-description" style="width: 80%; margin-left: 10%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Exemple du point de Lagrange 2 - <a href="/imgs/lagrange_2.png">Tpe-Micropesanteur</a></i>
+					</div>
+				</div>
+				<br />
+			</div>
+			<!-- Fin du Point de Lagrange -->
+		</div>
+
+
+
+		<!-- VIDEO DU POINT DE LAGRANGE -->
+		<div class="w3-container w3-card-4 w3-blue-grey">
+			<script type="text/javascript">
+				var point_lagrange;
+				function point_lagrange_onYouTubeIframeAPIReady() {
+					document.getElementById('point_lagrange_loading').style = "display: none;";
+					document.getElementById('point_lagrange_control_buttons').style = "display: unset;";
+
+					point_lagrange = new YT.Player('point_lagrange_video', {
+						videoId: 'MjMABe58jCI',
+						events: {
+							onReady: point_lagrange_initialize
+						},
+						playerVars : {
+							disablekb: 1,
+							rel: 0,
+							showinfo: 0,
+							controls: 0
+						}
+					});
+
+					document.getElementById('point_lagrange_video').width = "100%";
+				}
+
+				var point_lagrange_time_update_interval;
+				function point_lagrange_initialize() {
+					clearInterval(point_lagrange_time_update_interval);
+					point_lagrange_time_update_interval = setInterval(function() {
+						point_lagrange_onTimeUpdate(point_lagrange.getCurrentTime());
+					}, 100);
+				}
+
+				function point_lagrange_onTimeUpdate(time) {
+					var text = point_lagrange_ontimeupdate(time);
+
+					if(
+						point_lagrange.getCurrentTime() >= (point_lagrange.getDuration() - 0.1)
+						&& point_lagrange_pointer == 5 // Valeur maximum du pointeur
+					) {
+						point_lagrange.pauseVideo();
+						point_lagrange.seekTo(0);
+						point_lagrange_pointer = 0;
+						return;
+					}
+
+					if(text != null) {
+						document.getElementById('point_lagrange_text').style = "display: true;";
+						document.getElementById('point_lagrange_text').style = "animation: 1s ease 0s 1 normal none running animatetop;";
+						document.getElementById('point_lagrange_text').innerHTML = text;
+						point_lagrange.pauseVideo();
+					}
+				}
+
+				var point_lagrange_pointer = 0;
+				function point_lagrange_ontimeupdate(currentTime) {
+					if(currentTime >= 0 && point_lagrange_pointer == 0) {
+						point_lagrange_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons simulé les calculs trouvés précédemment sur le point de Lagrange sur le logiciel de simulation <i>Universe Sandbox 2</i> afin de vérifier que les calculs sont corrects." + getStartButtonText();
+					}
+					else if(currentTime >= 3 && point_lagrange_pointer == 1) {
+						point_lagrange_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tout d'abord, nous avons reproduit la Terre grâce aux outils du jeu et avons vérifié qu'elle avait bien une masse d'une Terre (<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>=</mo><mn>1</mn><mo>,</mo><mn>00</mn><mtext>&#xA0;earth</mtext><mo>=</mo><msup><mn>10</mn><mrow class='MJX-TeXAtom-ORD'><mn>25</mn></mrow></msup><mtext>&#xA0;kg</mtext></math>).<br/>Puis, nous avons recréé la planète Mars et lui avons donné la masse de Mars que nous avons utilisé qui est de <math xmlns='http://www.w3.org/1998/Math/MathML'><mn>8</mn><mo>,</mo><mn>73</mn><mtext>&#xA0;moon</mtext></math>, soit <math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>10</mn><mrow class='MJX-TeXAtom-ORD'><mn>24</mn></mrow></msup><mtext>&#xA0;kg</mtext></math>.<br />Pour finir, nous avons modélisé la comète 67P/Tchourioumov-Guérassimenko et lui avons donné une masse de <math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>10</mn><mrow class='MJX-TeXAtom-ORD'><mn>10</mn></mrow></msup><mtext>&#xA0;kg</mtext></math>." + getStartButtonText();
+					}
+					else if(currentTime >= 9 && point_lagrange_pointer == 2) {
+						point_lagrange_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons ensuite placé les trois objets sur le même ligne et nous avons disposé ces derniers de telle sorte à ce que Mars soit séparé de <math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>10</mn><mrow class='MJX-TeXAtom-ORD'><mn>5</mn></mrow></msup><mtext>&#xA0;km</mtext></math> de la comète et que cette dernière soit séparée de <math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>10</mn><mrow class='MJX-TeXAtom-ORD'><mn>6</mn></mrow></msup><mtext>&#xA0;km</mtext></math> de la Terre. Puis, nous avons figé la Terre et Mars dans l'univers afin qu'ils ne s'attirent pas l'un l'autre et ne perturbent pas la simulation." + getStartButtonText();
+					}
+					else if(currentTime >= 16 && point_lagrange_pointer == 3) {
+						point_lagrange_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Après avoir placés nos objets, nous avons relancé la simulation à l'aide du bouton <i>Play</i>." + getStartButtonText();
+					}
+					else if(currentTime >= 24 && point_lagrange_pointer == 4) {
+						point_lagrange_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La simulation tournait automatiquement à une vitesse de 1 sec/sec : une seconde dans le logiciel durait une seconde dans la <i>vraie vie</i>.<br />La vitesse étant insuffisante pour voir quelque chose, nous avons donc pris l'initiative de mettre la vitesse sur <math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn><mtext>&#xA0;Myears/sec</mtext></math> (c'est à dire qu'1 million d'années dans le logiciel durait une seconde dans la <i>vraie vie</i>." + getStartButtonText();
+					}
+					else if(currentTime >= 30 && point_lagrange_pointer == 5) {
+						point_lagrange_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On remarque que les planètes deviennent rouges mais cela est dû à la vitesse de la simulation et ne concerne pas notre expérience.<br />Cependant, on peut constater que la vitesse de la comète est de <math xmlns='http://www.w3.org/1998/Math/MathML'><mn>2</mn><mo>,</mo><mn>00</mn><mtext>&#xA0;km/s</mtext></math> ce qui est une vitesse relativement faible pour un astre.<br />On peut donc conclure que nos calculs sont corrects." + getStartButtonText();
+					}
+					return null;
+				}
+			</script>
+
+			<h2 class="video-title w3-center">Simulation du point de Lagrange - &copy;<a class="w3-hover-text-green" href="https://www.youtube.com/watch?v=MjMABe58jCI">Maxime Dherbécourt</a></h2>
+			<div class="w3-content" id="point_lagrange_div" style="max-width:800px; position:relative">
+				<div id="point_lagrange_loading">
+					<img class="loader" src="/imgs/loading-gif.gif">
+					<p class="loader-text">Si la vidéo ne charge pas, veuillez attendre une dizaine de secondes et si cela ne marche toujours pas, veuillez recharger la page.</p>
+				</div>
+
+				<div class="w3-card-4" id="point_lagrange_video"></div>
+				<div class="control-buttons" id="point_lagrange_control_buttons" style="display: none;">
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						point_lagrange.playVideo();
+						document.getElementById('point_lagrange_text').removeAttribute('style');
+
+						setTimeout(setAnimation, 1, 'point_lagrange_text');
+						setTimeout(undisplayText, 1000, 'point_lagrange_text');
+					">play_arrow</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="point_lagrange.pauseVideo()">pause</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						point_lagrange.seekTo(0);
+						point_lagrange_pointer = 0;
+						point_lagrange.pauseVideo();
+					">replay</i>
+				</div>
+
+				<p id="point_lagrange_text" class="video_text"></p>
+			</div>
+		</div>
+		<!-- FIN DE LA VIDEO DU POINT DE LAGRANGE -->
+
+
+
+		<!-- PARTIE B. Qu'est ce que la micropesanteur ? -->
+		<div class="w3-content w3-container w3-padding-64">
+			<!-- ISS -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					La Station Spatiale internationale (SSI en français) ou International Space Station (ISS) en anglais :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>L’ISS</b> est une <b>station spatiale</b> en orbite basse terrestre (<i>car elle est à moins de \(2\;000 \text{ km}\) d'altitude de la Terre</i>), créée par la collaboration des agences spatiales <b>américaine, russe, européenne, japonaise et canadienne</b>.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/iss-photo.jpg" style="width: 60%; display: block; margin-left: 18%;">
+
+					<div class="img-description" style="width: 60%; margin-left: 18%;">
+						<i class="copyright"><s>&copy;</s>Domaine Public - Photo de l'ISS - <a href="https://www.spaceflight.nasa.gov/gallery/images/shuttle/sts-134/html/s134e010137.html">NASA</a></i>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La station est occupée en permanence par des scientifiques, qui proviennent de toutes les agences précédemment citées, afin de réaliser des <b>expériences dans l’espace en micropesanteur</b> sur de nombreux sujets (<i>comme la santé dont nous reparlerons plus tard</i>).
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mais <b>pourquoi</b> les astronautes sont-ils en <b>état de micropesanteur</b> dans l’ISS ? La station subit-elle toujours l’attraction gravitationnelle de la Terre ?
+				</p>
+			</div>
+			<!-- Fin de l'ISS -->
+
+
+
+			<!-- La pesanteur et l'ISS -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					La pesanteur et l’ISS :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous savons que l’ISS est à une orbite de \(408 \text{ km}\) d'altitude. Or d’après la loi universelle de la gravitation nous avons :
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					$$
+						F = G \frac{M \times m}{d^2} \;\; \text{ avec }
+						\begin{cases}
+							G \text{ la constante universelle de gravitation}  \\
+							F \text{ la force gravitationnelle de la Terre}  \\
+							M \text{ la masse de la Terre}  \\
+							m \text{ la masse de l'ISS}  \\
+							d \text{ la distance entre l’ISS et le centre de la Terre (soit le rayon de la Terre et l'altitude de l’ISS)}
+						\end{cases}
+					$$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De plus, l'ISS a pour poids \(P = m \times g\) avec \(P\) le poids, \(m\) la masse de l'ISS et \(g\) l'attraction gravitationnelle de la Terre.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans l'espace, nous savons que la seule force qui agit est la gravité. On peut donc écrire :
+					$$  G \frac{M \times m}{d^2} = m \times g  $$
+					$$  G \frac{M}{d^2} = g  $$
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donc nous avons :
+					$$  g = 6,67428 \times 10^{-11} \frac{5,9736 \times 10^{24}}{((6,378 + 0,4) \times 10^6)^2} \simeq 8,67 \text{ m/s}^2  $$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculons cette valeur <b>en modifiant seulement la valeur de \(d\)</b>. Nous considérons en effet que \(d\) est égal au rayon de la Terre, c’est à dire que nous considérons une <b>altitude de \(0 \text{ m}\)</b>, soit la surface.
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous obtenons donc :
+					$$  g = 6,67428 \times 10^{-11} \frac{5,9736 \times 10^{24}}{(6,378 \times 10^6)^2} \simeq 9,801 \text{ m/s}^2  $$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous constatons que les <b>deux valeurs</b> d’accélération de la pesanteur dans l’ISS et sur Terre sont <b>à peu près similaires</b>. Pourquoi les astronautes sont-ils donc en micropesanteur ?
+				</p>
+			</div>
+			<!-- Fin de la pesanteur et l'ISS -->
+
+
+
+			<!-- L’expérience de la chute libre -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					L’expérience de la chute libre :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Afin de réaliser cette expérience, nous avons pris notre <b>téléphone</b> comportant un <b>accéléromètre</b> et l'avons orienté comme sur le schéma ci-dessous. Si nous regardons les valeurs de l’accéléromètre sur l’<b>axe Z</b>, nous remarquons qu’elles sont environ égales à \(9,8 \text{ m/s}^2\) ce qui correspond à la valeur \(9,801 \text{ m/s}^2\) calculée précédemment.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/accelerometer_illustration.png" style="width: 60%; display: block; margin-left: 19%;">
+
+					<div class="img-description" style="width: 60%; margin-left: 19%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Illustration des axes du téléphone - <a href="/imgs/accelerometer_illustration.png">Tpe-Micropesanteur</a></i>
+					</div>
+				</div>
+				<br />
+
+				<br />
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puis, nous avons enregistré les données de cet accéléromètre <b>via une application que nous avons développé</b> spécialement pour nos téléphones (<i>image de gauche</i>), dans un <b>fichier texte sous forme brute</b> (<i>image de droite</i>).
+				</p>
+
+				<br />
+				<div class="w3-row-padding w3-center w3-margin-top">
+					<div class="w3-half" style="background-color: rgba(0, 0, 0, 0.8);">
+						<div class="img-wrap w3-content w3-card">
+							<img class="w3-card-4 w3-animate-opacity" src="/imgs/accelerometer_appli.png" style="width: 89%; display: block; padding-left: 13%;">
+
+							<div class="img-description">
+								<i class="copyright">&copy;Maxime Dherbécourt - Application de l'accéléromètre - <a href="/imgs/accelerometer_appli.png">Tpe-Micropesanteur</a></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-half">
+						<div class="img-wrap w3-content w3-card">
+							<img class="w3-card-4 w3-animate-opacity" src="/imgs/accelerometer_datas.png" style="width: 100%; display: block;">
+
+							<div class="img-description">
+								<i class="copyright">&copy;Maxime Dherbécourt - Données brutes de l'accéléromètre - <a href="/imgs/accelerometer_datas.png">Tpe-Micropesanteur</a></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Puis nous avons lâché notre téléphone</b> d’une hauteur de <b>quelques mètres</b> par rapport au sol et avons ré-enregistré les données de l’expérience. Enfin, afin de visualiser les données graphiquement, nous avons développé un <b>logiciel sous Processing</b> (<i>un logiciel développé en langage Java</i>) et avons visualisé les résultats sous la forme suivante (<i>image ci-dessous</i>). Ce logiciel est également disponible sur le site : <a class="w3-hover-text-green" href="https://www.openprocessing.org/sketch/474220">lien</a> (cliquer sur un carré en haut à gauche pour afficher un axe).
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/accelerometer_representation_1.png" style="width: 80%; display: block; margin-left: 10%;">
+
+					<div class="img-description" style="width: 80%; margin-left: 10%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Représentation des données de l'accéléromètre - <a href="/imgs/accelerometer_representation_1.png">Tpe-Micropesanteur</a></i>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vu que nous avons orienté notre téléphone face à l’axe Z, nous pouvons afficher <b>uniquement les données de ce dernier</b> afin d’éviter une surcharge visuelle.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/accelerometer_representation_2.png" style="width: 80%; display: block; margin-left: 10%;">
+
+					<div class="img-description" style="width: 80%; margin-left: 10%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Représentation des données de l'accéléromètre (axe Z) - <a href="/imgs/accelerometer_representation_2.png">Tpe-Micropesanteur</a></i>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intéressons nous maintenant à la partie où le téléphone était en chute. Nous remarquons que lors de la chute, la valeur de <b>g s’approchait de 0</b>, ce qui signifie que le téléphone était en état de <b>micropesanteur</b>.
+				</p>
+			</div>
+			<!-- Fin de l’expérience de la chute libre -->
+
+
+			<!-- L’ISS est en chute libre -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					L’ISS est en chute libre :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous savons que l’ISS et les astronautes à l’intérieur sont soumis à une <b>chute constante</b> en direction du centre de gravité de la Terre. Cependant, l’ISS ne "tombe" pas sur la Terre car elle possède une <b>vitesse de \(27.600 \text{ km/h}\)</b> permettant de se maintenir en <b>orbite stable autour de la planète</b>, comme nous le voyons sur le schéma ci-dessous.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/chute_iss.png" style="width: 60%; display: block; margin-left: 17%;">
+
+					<div class="img-description" style="width: 60%; margin-left: 17%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Chute de l'ISS - <a href="/imgs/chute_iss.png">Tpe-Micropesanteur</a> d'après l'image de la Terre de <a href="http://www.fvalk.com/images/Day_image/MSG-1200B-WLD.jpg">Fvalk</a></i>
+					</div>
+				</div>
+				<br />
+			</div>
+			<!-- Fin de l’ISS est en chute libre -->
+
+
+
+			<!-- Le poids et la chute libre -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Le poids et la chute libre :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D’après la <b>loi de Newton</b>, nous avons :
+					$$  \overrightarrow{P} = m \times \overrightarrow{g}  $$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De plus, nous savons que <b>la somme des forces</b> que subit un objet de masse \(m\) est égale à sa <b>masse multipliée par l’accélération</b>, soit :
+					$$  \sum \overrightarrow{P} = m \times \overrightarrow{a}  $$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un corps en chute libre n’est <b>soumis qu’à son poids</b> vu que dans l’espace, il n’y a pas de frottements liés à l’air. Donc :
+					$$  \overrightarrow{P} = m \times \overrightarrow{a}  $$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous pouvons donc écrire :
+					$$  m \times \overrightarrow{g} = m \times \overrightarrow{a}  $$
+					$$  \overrightarrow{g} = \overrightarrow{a}  $$
+
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainsi <b>l’accélération</b> est égale à l’<b>attraction du champ gravitationnel</b> et la pesanteur est une accélération. La <b>vitesse de la chute</b> d’un corps ne dépend donc <b>pas de sa masse</b>.
+				</p>
+			</div>
+			<!-- Fin du poids et la chute libre -->
+
+
+
+			<!-- Conclusion -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Conclusion :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pour conclure, rappelons que dans l’ISS, la gravité est de \(8,67 \text{ m/s}^2\). Malgré cela, l’ISS est en <b>chute libre constante</b> vers le centre de la Terre.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La vitesse de la chute ne dépendant pas de la masse, l’ISS et les astronautes <b>tombent donc à la même vitesse</b>. C’est donc pour cela que les astronautes de l’ISS sont en <b>état de micropesanteur</b>.
+				</p>
+			</div>
+			<!-- Fin de la conclusion -->
+		</div>
+		<!-- FIN PARTIE B. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- PARTIE C. Les effets de la micropesanteur sur l’organisme -->
+		<div class="w3-content w3-container w3-padding-64" id="partie_C">
+			<h3 class="main-title w3-center">
+				C. Les effets de la micropesanteur sur l’organisme :
+			</h3>
+
+
+
+			<!-- Introduction -->
+			<div class="sub-partie">
+				<p class="main-text w3-content" style="padding-top: 13px;">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De nombreux problèmes découlent d’un séjour en micropesanteur, mais il est important de noter que <b>nous n’en connaissons pas encore la liste complète</b>. Des études sur ces effets ont par ailleurs été récemment développés par le spationaute Thomas Pesquet, lors de sa mission Proxima en 2017.
+				</p>
+			</div>
+			<!-- Fin de l'Introduction -->
+
+
+
+			<!-- Effets sur le système neuro-sensoriel -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Effets sur le système neuro-sensoriel :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La micropesanteur rend les astronautes <b>plus éveillés</b>. Ils sont donc plus excités, et font des efforts physiques moins importants, étant donné qu’il n’y a plus besoin pour notre corps de lutter contre la gravité. Le rythme naturel de sommeil des astronautes est également perturbé à cause des 16 levers et couchers de Soleil toutes les 24h.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ceux-ci <b>perdent donc environ 6h de sommeil par semaine</b>, d’après les données de l’ESA. Toutefois, certains astronautes ne sont pas affectés.
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D’autre part, 3 astronautes sur 10 ont des <b>troubles de la vision</b> à leur retour sur Terre.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En effet, en micropesanteur, la <b>gaine du nerf optique gonfle</b> et le <b>globe oculaire s'aplatit</b>, comme montré sur le schéma suivant, qui montre un globe oculaire avant un séjour en microgravité et après 180 jours dans l’ISS. Les raisons de cette modification sont expliquées ci-dessous (<i>faites glisser le curseur pour dévoiler les images, si elles ne marchent pas, elle sont également disponibles <a class="w3-hover-text-green" href="/imgs/oeil_micropesanteur.jpg">ici</a></i>).
+				</p>
+			</div>
+			<!-- Fin des effets sur le système neuro-sensoriel -->
+
+
+
+			<!-- Wrapper de l'oeil -->
+			<br />
+			<div class="img-wrap w3-content">
+				<div id="slider_yeux" style="width: 60%; display: block; margin-left: 17%;">
+					<img src="/imgs/oeil_micropesanteur_1.jpg" />
+					<img src="/imgs/oeil_micropesanteur_2.jpg" />
+				</div>
+
+				<div class="img-description" style="width: 60%; margin-left: 17%;">
+					<i class="copyright">&copy;Sirielle Walter - Schéma d'un globe oculaire - <a href="/imgs/oeil_micropesanteur_1.jpg">Tpe-Micropesanteur</a></i>
+				</div>
+			</div>
+			<br />
+
+			<script async type="text/javascript">
+				$(function(){
+					$("#slider_yeux").twentytwenty();
+				});
+			</script>
+			<!-- Fin du wrapper de l'oeil -->
+
+
+
+			<!-- Effets sur le système cardio-vasculaire -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Effets sur le système cardio-vasculaire :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les liquides du corps n'étant plus attirés vers le bas par l’attraction terrestre, <b>le sang stagne</b> dans les vaisseaux du <b>haut du corps</b> ce qui les dilate tandis que ceux du bas rétrécissent. On considère qu’environ 1 L de sang remonte dans la tête de l’astronaute.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Des expériences sont actuellement menées sur ce sujet, notamment grâce au module <b>CardioLab</b>, équipement franco-allemand qui permet ces mesures depuis 2008 afin de minimiser les effets de la micropesanteur sur le système cardio-vasculaire des astronautes et de mieux comprendre les troubles cardio-vasculaires dont souffrent les personnes âgées.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On utilise également <b>Echo</b>, un échographe développé par des ingénieurs Français et Canadiens. Cet outil est nouveau en son genre car l’astronaute dans l’ISS a <b>juste à mener Echo sur une zone décidée</b> par les scientifiques sur Terre et ces derniers peuvent ensuite contrôler à l’aide de moteurs, l’orientation et la position précise de l’outil.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Une image haute qualitée est ensuite transmise vers la Terre et permet aux scientifiques s’occupant d’Echo de reconstituer <b>une image en 3D</b> de l’organe ciblé.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le coeur n’a également <b>plus à travailler autant</b> pour ramener le sang vers le haut du corps, il travaille donc moins et, comme tout muscle, <b>se transforme et s’adapte</b>. Il devient <b>plus rond</b>, ce qui pose un soucis lors du retour sur Terre : en effet le coeur n’est <b>plus habitué à devoir fournir autant d’efforts</b> et le cerveau reçoit moins de sang.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les astronautes peuvent donc faire une syncope, c’est à dire qu’ils s’évanouissent. Ils peuvent également être exposés à de gros <b>risques cardio-vasculaires</b>.
+				</p>
+			</div>
+			<!-- Fin des effets sur le système cardio-vasculaire -->
+
+
+
+			<!-- Effets sur les muscles -->
+			<br />
+			<div class="sub-partie">
+				<h2>
+					<span style="text-decoration: none;">
+						<img class="flag-title" src="/imgs/logo_france.png" id="muscles_flag" onclick="musclesPointerSwitch()" />&nbsp;&nbsp;
+					</span>
+
+					<span class="underlined">
+						Effets sur les muscles :
+					</span>
+
+					<span style="font-size: 20px;">
+						(<i>partie disponible en allemand et français, changez la langue via le drapeau</i>)
+					</span>
+
+					<script type="text/javascript">
+						var currentID = 0;
+						function musclesPointerSwitch() {
+							if(currentID == 0) {
+								document.getElementById('muscles_fr').style = 'display: unset;';
+								document.getElementById('muscles_dt').style = 'display: none;';
+								document.getElementById('muscles_flag').src = "/imgs/logo_allemagne.png";
+								currentID = 1;
+							}
+							else {
+								document.getElementById('muscles_fr').style = 'display: none;';
+								document.getElementById('muscles_dt').style = 'display: unset;';
+								document.getElementById('muscles_flag').src = "/imgs/logo_france.png";
+								currentID = 0;
+							}
+						}
+					</script>
+				</h2>
+
+
+				<p class="main-text w3-content" id="muscles_fr" style="display: none;">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les <b>muscles du dos</b> sont ceux qui <b>fondent le plus</b>, avec ceux des cuisses et des mollets car ils sont utilisés de manière presque permanente sur Terre (ils nous maintiennent debout) et presque jamais en micropesanteur. Sur Terre, il faut donc faire des <b>exercices pour les remuscler</b>. Un astronaute perdrait \(10 \text{%}\) de sa masse musculaire en moyenne durant son vol, s’il ne faisait aucun sport.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cependant, cette <b>perte</b> a tendance à se <b>stabiliser au bout de 6 mois environ</b>. Les muscles perdent en masse musculaire mais gagnent en graisse, ce qui s’accompagne à une résistance à l’insuline, responsable du diabète.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ces données permettent notamment de <b>mieux comprendre certaines maladies</b>, comme celle citée précédemment, et ainsi les corriger sur Terre.
+				</p>
+
+				<p class="main-text w3-content" id="muscles_dt">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Die <b>Rückens Muskeln</b> schrumpfen <b>am meisten leichter</b>, wie die Muskeln in den Oberschenkeln und in den Waden, weil sie auf der Erde fast ständig benutzt werden (um stehen zu bleiben) und fast niemals in Mikroschwerkraft. Auf der Erde müssen die Astronauten <b>trainieren</b>, um die Muskeln wieder zu stärken. Ein Astronaut würde etwa \(10 \text{%}\) von seiner Muskelmasse in einem Flug verlieren, wenn er keinen Sport treiben würde.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nach etwa sechs Monaten <b>stabilisiert sich der Muskelverlust</b>. Die Muskeln verlieren an Muskelmasse, gewinnen aber an Fett, was eine Resistenz gegen Insulin verursacht, die für Diabetes verantwortlich ist.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diese Angaben erlauben es uns, einige <b>Krankheiten besser zu verstehen</b>, um dann zu versuchen, sie auf der Erde zu heilen.
+				</p>
+			</div>
+			<!-- Fin des effets sur les muscles -->
+		</div>
+
+
+
+		<!-- VIDEO DE MICROGRAVITE DU RAT -->
+		<div class="w3-container w3-card-4 w3-blue-grey">
+			<script type="text/javascript">
+				var rat_experience;
+				function rat_experience_onYouTubeIframeAPIReady() {
+					document.getElementById('rat_experience_loading').style = "display: none;";
+					document.getElementById('rat_experience_control_buttons').style = "display: unset;";
+
+					rat_experience = new YT.Player('rat_experience_video', {
+						videoId: 'LZzL-Tas8AY',
+						events: {
+							onReady: rat_experience_initialize
+						},
+						playerVars : {
+							disablekb: 1,
+							rel: 0,
+							showinfo: 0,
+							controls: 0
+						}
+					});
+
+					document.getElementById('rat_experience_video').width = "100%";
+				}
+
+				var rat_experience_time_update_interval;
+				function rat_experience_initialize() {
+					clearInterval(rat_experience_time_update_interval);
+					rat_experience_time_update_interval = setInterval(function() {
+						rat_experience_onTimeUpdate(rat_experience.getCurrentTime());
+					}, 100);
+				}
+
+				function rat_experience_onTimeUpdate(time) {
+					var text = rat_experience_ontimeupdate(time);
+
+					if(rat_experience.getCurrentTime() >= (rat_experience.getDuration() - 0.1) && rat_experience_pointer == 8) {
+						rat_experience.pauseVideo();
+						rat_experience.seekTo(0);
+						rat_experience_pointer = 0;
+						return;
+					}
+
+					if(text != null) {
+						document.getElementById('rat_experience_text').style = "display: true;";
+						document.getElementById('rat_experience_text').style = "animation: 1s ease 0s 1 normal none running animatetop;";
+						document.getElementById('rat_experience_text').innerHTML = text;
+						rat_experience.pauseVideo();
+					}
+				}
+
+				var rat_experience_pointer = 0;
+				function rat_experience_ontimeupdate(currentTime) {
+					if(currentTime >= 0 && rat_experience_pointer == 0) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons montré cette perte musculaire grâce à une expérience réalisée en classe sur des cuisses de grenouilles par une coupe longitudinale (nous souhaitions faire une coupe transversale mais elle est malheureusement impossible avec les techniques proposées du lycée, il faudrait un laser)." + getStartButtonText();
+					}
+					else if(currentTime >= 1 && rat_experience_pointer == 1) {
+						rat_experience_pointer++;
+						return "Liste du matériel utilisé :<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Muscle : cuisse de grenouille<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Lames + lamelles<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Scalpel<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Pinces fines courbe 11cm<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Verres de montre<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Aiguille droite à décérébrer<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Appareil photo (téléphone)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Colorant musculaire : bleu de méthylène<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Microscope optique" + getContinueButtonText();
+					}
+					else if(currentTime >= 41 && rat_experience_pointer == 2) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons tout d'abord relevé un échantillon de cette coupe et retiré les fibres qui le composent en frottant légèrement avec une aiguille droite à décérébrer et une pince courbe de 11 cm." + getContinueButtonText();
+					}
+					else if(currentTime >= 58 && rat_experience_pointer == 3) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puis nous avons déposé séparément dans des verres de montre les fibres musculaires et mis ces dernières en évidence en les colorant avec du bleu de méthylène. Après coloration, nous avons placé le morceau de fibre sur une lame microscopique en verre et l'avons rapidement recouvert afin d’éviter le plus possible les saletés. Dans notre cas, nous avons testé avec et sans le colorant." + getContinueButtonText();
+					}
+					else if(currentTime >= 61 && rat_experience_pointer == 4) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les fibres musculaires étant les mieux visibles sur l'échantillon avec colorant, nous avons gardé ce dernier. Voici la photo que nous obtenons et que nous allons utiliser, faite à l'aide d'un microscope optique. Nous avons ensuite modélisé deux fibres musculaires en 3D en sachant que les fibres musculaires sont de formes cylindriques et d'après l'image visible actuellement sur la vidéo." + getContinueButtonText();
+					}
+					else if(currentTime >= 69.3 && rat_experience_pointer == 5) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si nous tournons ces fibres modélisées de 90° par rapport à l'axe Z, et que l’on coupe ces fibres verticalement (comme si l’on effectuait une coupe transversale), on observe des formes circulaires comme celles visibles sur la vidéo." + getContinueButtonText();
+					}
+					else if(currentTime >= 72 && rat_experience_pointer == 6) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les formes circulaires visibles sur cette photo (une coupe transversalle d'un muscle de rat réalisée par la NASA) sont donc des fibres musculaires." + getContinueButtonText();
+					}
+					else if(currentTime >= 77 && rat_experience_pointer == 7) {
+						rat_experience_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous pouvons donc comparer cette dernière photo avec celle de la NASA d’une coupe transversale d’un muscle de rat ayant effectué un séjour en micropesanteur (photo de gauche ci-dessus). On constate que sur les muscles du rat ayant été en micropesanteur, les fibres sont beaucoup plus éloignées les unes des autres et sont plus <i>fines</i> que lorsqu’il subissait la pesanteur. La micropesanteur a donc pour effet d’écarter ces fibres les unes par-rapport aux autres ainsi que de les affiner : c’est l’atrophie musculaire (ou amyotrophie)." + getContinueButtonText();
+					}
+					return null;
+				}
+			</script>
+
+			<h2 class="video-title w3-center">Coupe longitudinale d'une cuisse de grenouille - &copy;<a class="w3-hover-text-green" href="https://www.youtube.com/watch?v=LZzL-Tas8AY">Maxime Dherbécourt</a></h2>
+			<div class="w3-content" id="rat_experience_div" style="max-width:800px; position:relative">
+				<div id="rat_experience_loading">
+					<img class="loader" src="/imgs/loading-gif.gif">
+					<p class="loader-text">Si la vidéo ne charge pas, veuillez attendre une dizaine de secondes et si cela ne marche toujours pas, veuillez recharger la page.</p>
+				</div>
+
+				<div class="w3-card-4" id="rat_experience_video"></div>
+				<div class="control-buttons" id="rat_experience_control_buttons" style="display: none;">
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						rat_experience.playVideo();
+						document.getElementById('rat_experience_text').removeAttribute('style');
+
+						setTimeout(setAnimation, 1, 'rat_experience_text');
+						setTimeout(undisplayText, 1000, 'rat_experience_text');
+					">play_arrow</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="rat_experience.pauseVideo()">pause</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						rat_experience.seekTo(0);
+						rat_experience_pointer = 0;
+						rat_experience.pauseVideo();
+					">replay</i>
+				</div>
+
+				<p id="rat_experience_text" class="video_text"></p>
+			</div>
+		</div>
+		<!-- FIN DE LA VIDEO DE MICROGRAVITE DU RAT -->
+
+
+
+		<div class="w3-content w3-container w3-padding-64">
+			<!-- Effets sur le squelette -->
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Effets sur le squelette :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La <b>colonne vertébrale</b> n’a plus à supporter le poids du corps en micropesanteur. Elle a donc <b>tendance à s'étirer</b> et l’astronaute peut grandir de 3 à 7 cm en 6 mois. Mais, il retrouvera sa taille initiale lors de son retour sur Terre.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De plus, <b>l’os devient poreux</b> sans exercice physique stimulant son renouvellement. Son taux de minéralisation diminue en moyenne de \(1,5 \text{%}\) par mois sur tout le squelette et jusqu’à \(24 \text{%}\) par an dans le bassin ou la colonne vertébrale.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Il faut donc <b>stimuler la destruction et la production de certaines cellules de l’os</b> par l'entraînement (que nous verrons plus tard) afin qu’ils se reconstruisent et forment de nouveaux tissus.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’étude américaine <b>SPRINT</b> (étude menée dans 100 centres médicaux aux Etats-Unis par le National Institute of Health (NIH))  permet de trouver le <b>bon équilibre d’entrainement</b> et sert notamment sur Terre aux personnes en difficulté ou ayant des maladies squelettiques.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le <b>microscanner</b> a notamment été adapté de la recherche spatiale et permet de voir la structure osseuse de certains membres du corps sans avoir besoin de faire des prélèvements.
+				</p>
+			</div>
+			<!-- Fin des effets sur le squelette -->
+
+
+
+			<!-- Effets sur le vieillissement accéléré -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Vieillissement accéléré :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous pouvons comparer un <b>astronaute</b> avec une <b>personne âgée</b>. En effet, un astronaute subit ce qui s'appelle un "<b>vieillissement accéléré</b>" du fait des problèmes cités précédemment, comme la <b>baisse de vision</b>, une <b>diminution de la masse musculaire</b> ainsi qu’une <b>détérioration des tissus squelettiques</b>, conduisant souvent à de <b>l’ostéoporose</b>.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ces études sur les astronautes servent donc à expliquer et soigner des <b>maladies</b> liées au <b>vieillissement</b>.
+				</p>
+			</div>
+			<!-- Fin du vieillissement accéléré -->
+
+
+
+			<!-- Mal de l’espace -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Mal de l’espace :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Au cours de vols orbitaux, les <b>fonctions sensorielles</b> peuvent être perturbées, instaurant un <b>mal de l’espace</b>.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D’après <span style="text-decoration: underline;">Mini manuel de Biologie animale</span>, cet effet "atteint plus de la moitié des spationautes". L’explication la plus probable est celle d’un "conflit sensoriel engendré par les <b>modifications</b> des <b>stimulations sensorielles</b>".
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En effet, en micropesanteur, il n’y a <b>pas de référence haut-bas</b> (comme le montre le spationaute français Thomas Pesquet dans le Tweet ci-contre) et les "récepteurs musculaires et articulaires de l’appareil locomoteur" ne sont plus utilisés.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De plus, les informations perçues par les nerfs et celles reçues par la vue sont différentes et l’absence de gravité "libère" certaines <b>parties du corps</b> qui se mettent à légèrement "<b>bouger librement</b>" (comme le sang, la lymphe, l’oreille interne) et créent donc une sensation de malaise.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce mal de l’espace <b>passe</b> cependant <b>au bout de quelques jours passés dans l’ISS</b>. La première semaine des astronautes est d’ailleurs réservée à l’adaptation à la micropesanteur.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/tweet-835589562944598017.png" style="width: 60%; display: block; margin-left: 18%;">
+
+					<div class="img-description" style="width: 60%; margin-left: 18%;">
+						<i class="copyright">&copy;Thomas Pesquet - Tweet de Thomas Pesquet - <a href="https://twitter.com/Thom_astro/status/835589562944598017/photo/1">Twitter</a></i>
+					</div>
+				</div>
+				<br />
+			</div>
+			<!-- Fin du mal de l’espace -->
+		</div>
+		<!-- FIN PARTIE C. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- PARTIE D. Les effets liés à l'absence d’atmosphère -->
+		<div class="w3-content w3-container w3-padding-64" id="partie_D">
+			<h3 class="main-title w3-center">
+				D. Les effets liés à l'absence d’atmosphère :
+			</h3>
+
+
+
+			<!-- Définition de l’atmosphère et exemple de la planète bleue -->
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Définition de l’atmosphère et exemple de la planète bleue :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’atmosphère est constituée de <b>plusieurs couches de gaz</b> qui enveloppent certains astres. Sa composition diffère selon les astres et plus les molécules qui constituent l’atmosphère se déplacent vite, plus la température est élevée.
+					<br />Par exemple, les <b>étoiles</b> atteignent des <b>températures extrêmes</b> et ont donc généralement <b>peu d’atmosphère</b>. Il n’y a pas de frontière précise entre l’atmosphère et l’espace : plus l’altitude augmente, plus l’atmosphère se confond avec l’espace.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’atmosphère terrestre est donc l’<b>enveloppe gazeuse</b> entourant <b>la Terre</b> et elle est composée de \(78 \text{%}\) de diazote, de \(21 \text{%}\) de dioxygène et de \(1 \text{%}\) d’autres gaz tels que l’argon et le dioxyde de carbone.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous considérons que l’atmosphère terrestre possède une épaisseur de \(800 \text{ km}\). L’atmosphère terrestre est entre autre responsable de la <b>régulation de la température de la Terre</b> et de la <b>filtration des rayons ultraviolets</b> (<i>UV</i>).
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les UV sont des <b>rayonnements électromagnétiques</b> qui possèdent une longueur d’onde entre la lumière visible (<i>\(10 \text{ à } 6 \text{ nm}\)</i>) et les rayons X (<i>\(10 \text{ à } 9 \text{ nm}\)</i>). Ils ont été découverts par le physicien Johann Wilhelm Ritter en 1801.
+				</p>
+			</div>
+			<!-- Fin de la définition de l’atmosphère et exemple de la planète bleue -->
+
+
+
+			<!-- Pourquoi certains astres n’ont-ils pas d’atmosphère ? -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Pourquoi certains astres n’ont-ils pas d’atmosphère ?
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans notre système solaire, la distance par rapport au Soleil joue un rôle important dans le maintien de l’atmosphère.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si un astre (<i>comme Mercure</i>) est <b>trop près du Soleil</b>, la <b>température sera trop élevée</b>. Ainsi les <b>molécules s’évaderont facilement</b> dans l’espace car elles seront <b>très agitées</b> à cause de la chaleur.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La gravité est aussi un facteur important. En effet si un astre est trop <b>léger</b> (<i>comme la Lune</i>), sa force gravitationnelle sera faible et il <b>ne pourra pas retenir</b> son atmosphère et les molécules s’évaderont dans l’espace.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Au contraire, un <b>astre lourd</b>, possédera une force gravitationnelle importante et aura donc une <b>atmosphère très étendue</b>.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prenons pour exemple la Lune et la Terre, elles sont situées à la même distance du Soleil, pourtant <b>la Lune n’a pas d’atmosphère</b>.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’astre est en effet <b>trop léger</b> et sa gravité donc peu élevée (<i>environ \(0,16 \text{ fois}\) celle de la Terre</i>) pour garder son atmosphère alors que la <b>Terre</b> qui est <b>plus massive</b>, garde bien son atmosphère.
+				</p>
+			</div>
+			<!-- Fin de pourquoi certains astres n’ont-ils pas d’atmosphère ? -->
+
+
+
+			<!-- Les effets des rayons UV -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Les effets des rayons UV :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’atmosphère, comme vu précédemment, est responsable de l’absorption des <b>rayons UV</b>.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans l’espace, les astronautes sont donc <b>exposés</b> à ces derniers s’ils ne bénéficient pas de protections spécifiques.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D’après l’Organisation Mondiale de la Santé (OMS), les UV pénètrent dans les couches profondes de la peau, qu'ils rendent <b>moins élastique</b> et <b>plus ridée</b>, ce qui est caractéristique d’un <b>vieillissement accéléré</b>.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De plus, des doses élevées d’UV provoquent des coups de soleil, ce qui augmente la probabilité d’avoir un jour des <b>cancers de la peau</b>.
+				</p>
+			</div>
+			<!-- Fin des effets des rayons UV -->
+		</div>
+		<!-- FIN PARTIE D. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- PARTIE E. Les dangers du Soleil et le champ magnétique terrestre -->
+		<div class="w3-content w3-container w3-padding-64" id="partie_E">
+			<h3 class="main-title w3-center">
+				E. Les dangers du Soleil et le champ magnétique terrestre :
+			</h3>
+
+
+
+			<!-- Introduction -->
+			<div class="sub-partie">
+				<p class="main-text w3-content" style="padding-top: 13px;">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’<b>absence de champ magnétique terrestre</b> est également un effet important dans l’espace et peut conduire à de nombreux problèmes.
+					<br />De plus, comme nous allons le voir, <b>le Soleil</b> peut être facteur d’effets négatifs pour les astronautes.
+				</p>
+			</div>
+			<!-- Fin de l'introduction -->
+
+
+
+			<!-- Le champ magnétique terrestre -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Le champ magnétique terrestre :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le <b>champ magnétique terrestre</b> (<i>appelé aussi bouclier terrestre</i>) est un champ magnétique présent autour de la Terre et réparti de façon non-uniforme.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce champ, aussi appelé la <b>magnétosphère</b>, s’étend au minimum jusqu’à \(65\;000 \text{ km}\) au-dessus de la surface de notre planète. Comme <b>l’ISS se situe à \(408 \text{ km}\) au-dessus de la surface terrestre</b>, elle est donc <b>totalement protégée par ce bouclier</b>.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le champ magnétique terrestre a pour forme celle visible sur l’image ci-dessous (<i>la gauche de la photo correspond au côté où le Soleil est présent</i>) du fait des <b>vents solaires</b> qui "compressent" ce champ.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/earth_magnetic_field.png" style="width: 60%; display: block; margin-left: 17%;">
+
+					<div class="img-description" style="width: 60%; margin-left: 17%;">
+						<i class="copyright">&copy;CCMC - Champ magnétique terrestre - <a href="https://ccmc.gsfc.nasa.gov/results/index.php">Community Coordinated Modeling Center</a></i>
+					</div>
+				</div>
+				<br />
+			</div>
+			<!-- Fin du champ magnétique terrestre -->
+
+
+
+			<!-- Le vent solaire et les éruptions solaires -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Le vent solaire et les éruptions solaires :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le <b>vent solaire</b> est un flux de plasma constitué d’ions et d’électrons qui sont éjectés dans la haute atmosphère du Soleil. C’est notamment ce vent solaire qui est responsable des <b>aurores polaires</b>, lorsque les particules solaires portées par ce vent pénètrent dans l’atmosphère à proximité des pôles.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Des éruptions solaires se déroulent plusieurs fois par an. En temps normal, le nombre de particules atteignant l’atmosphère terrestre est de <b>\(10\)</b> tandis que lors d’une de ces éruption, ce nombre équivaut à <b>\(10\;000\)</b> (<i><b>suite à des orages magnétiques sur le Soleil</b> par exemple</i>).
+				</p>
+			</div>
+		</div>
+
+
+
+		<!-- VIDEO DE L'ERUPTION SOLAIRE -->
+		<div class="w3-container w3-card-4 w3-blue-grey">
+			<script type="text/javascript">
+				var eruption_solaire;
+				function eruption_solaire_onYouTubeIframeAPIReady() {
+					document.getElementById('eruption_solaire_loading').style = "display: none;";
+					document.getElementById('eruption_solaire_control_buttons').style = "display: unset;";
+
+					eruption_solaire = new YT.Player('eruption_solaire_video', {
+						videoId: 'ybfAvEVpBMo',
+						events: {
+							onReady: eruption_solaire_initialize
+						},
+						playerVars : {
+							disablekb: 1,
+							rel: 0,
+							showinfo: 0,
+							controls: 0
+						}
+					});
+
+					document.getElementById('eruption_solaire_video').width = "100%";
+				}
+
+				var eruption_solaire_time_update_interval;
+				function eruption_solaire_initialize() {
+					clearInterval(eruption_solaire_time_update_interval);
+					eruption_solaire_time_update_interval = setInterval(function() {
+						eruption_solaire_onTimeUpdate(eruption_solaire.getCurrentTime());
+					}, 100);
+				}
+
+				function eruption_solaire_onTimeUpdate(time) {
+					var text = eruption_solaire_ontimeupdate(time);
+
+					if(eruption_solaire.getCurrentTime() >= (eruption_solaire.getDuration() - 28) && eruption_solaire_pointer == 3) {
+						eruption_solaire.pauseVideo();
+						eruption_solaire.seekTo(0);
+						eruption_solaire_pointer = 0;
+						return;
+					}
+
+					if(text != null) {
+						document.getElementById('eruption_solaire_text').style = "display: true;";
+						document.getElementById('eruption_solaire_text').style = "animation: 1s ease 0s 1 normal none running animatetop;";
+						document.getElementById('eruption_solaire_text').innerHTML = text;
+						eruption_solaire.pauseVideo();
+					}
+				}
+
+				var eruption_solaire_pointer = 0;
+				function eruption_solaire_ontimeupdate(currentTime) {
+					if(currentTime >= 0 && eruption_solaire_pointer == 0) {
+						eruption_solaire_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Par exemple, le mercredi 6 septembre 2017, la NASA a enregistré la plus intense éruption solaire depuis décembre 2008." + getStartButtonText();
+					}
+					else if(currentTime >= 7 && eruption_solaire_pointer == 1) {
+						eruption_solaire_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On voit bien que l'éruption solaire perturbe le champ magnétique visible en haut à droite de la vidéo." + getStartButtonText();
+					}
+					if(currentTime >= 12 && eruption_solaire_pointer == 2) {
+						eruption_solaire_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La couleur blanche à l'endroit de l'éruption est dûe aux particules provenant du Soleil qui vont être envoyées dans l'espace." + getStartButtonText();
+					}
+					return null;
+				}
+			</script>
+
+			<h2 class="video-title w3-center">Eruption solaire du 06/09/2017 - &copy;<a class="w3-hover-text-green" href="https://www.youtube.com/watch?v=ybfAvEVpBMo">NASA</a></h2>
+			<div class="w3-content" id="eruption_solaire_div" style="max-width:800px; position:relative">
+				<div id="eruption_solaire_loading">
+					<img class="loader" src="/imgs/loading-gif.gif">
+					<p class="loader-text">Si la vidéo ne charge pas, veuillez attendre une dizaine de secondes et si cela ne marche toujours pas, veuillez recharger la page.</p>
+				</div>
+
+				<div class="w3-card-4" id="eruption_solaire_video"></div>
+				<div class="control-buttons" id="eruption_solaire_control_buttons" style="display: none;">
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						eruption_solaire.playVideo();
+						document.getElementById('eruption_solaire_text').removeAttribute('style');
+
+						setTimeout(setAnimation, 1, 'eruption_solaire_text');
+						setTimeout(undisplayText, 1000, 'eruption_solaire_text');
+					">play_arrow</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="eruption_solaire.pauseVideo()">pause</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						eruption_solaire.seekTo(0);
+						eruption_solaire_pointer = 0;
+						eruption_solaire.pauseVideo();
+					">replay</i>
+				</div>
+
+				<p id="eruption_solaire_text" class="video_text"></p>
+			</div>
+		</div>
+		<!-- FIN DE LA VIDEO DE L'ERUPTION SOLAIRE -->
+
+
+
+		<div class="w3-content w3-container w3-padding-64" style="padding-bottom: 6px !important;">
+			<!-- Le vent solaire et les éruptions solaires : suite -->
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Le champ magnétique terrestre (suite) :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ci-dessous, une comparaison de la <b>taille de cette éruption</b> avec la taille de la <b>Terre à taille réelle</b>.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/earth_eruption_scale.jpg" style="width: 60%; display: block; margin-left: 17%;">
+
+					<div class="img-description" style="width: 60%; margin-left: 17%;">
+						<i class="copyright"><s>&copy;</s>Domaine Public - Comparaison taille éruption / Terre - <a href="https://www.nasa.gov/feature/goddard/2017/active-region-on-sun-continues-to-emit-solar-flares/">NASA</a></i>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ces particules, si elles sont en grande quantité lorsqu'elles atteignent la Terre, <b>interagissent</b> parfois avec le <b>champ magnétique terrestre</b> (<i>les éruptions conduisant à ces interactions sont appelées des éjections de masse coronale (<b>CME</b>)</i>). Elles <b>perturbent</b> alors <b>l’activité des réseaux électriques</b>, des <b>satellites</b> ainsi que les <b>communications radio</b>, même si le champ magnétique terrestre limite ces perturbations.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toutefois, les dégâts peuvent être importants sur les <b>appareils</b> se trouvant en <b>dehors</b> du champ magnétique terreste et peuvent même faire <b>dysfonctionner des machines</b>, ce qui serait un risque pour le succès d'une mission mais surtout un <b>risque pour les astronautes</b>, si c’est une missions habitée.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En effet, si ces perturbations affectaient le système de navigation ou encore le système de communication, les conséquences seraient dramatiques.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Par exemple, d’après la publication dans le volume 32 du <a class="w3-hover-text-green" href="https://www.sciencedirect.com/science/article/pii/S0265964615000211">journal international de L.M. Delgado Lopez à la page 32</a>, le 20 janvier 1994, le satellite canadien de télécommunication <b>Anik E2</b> fut <b>non-opérationnel</b> suite à une <b>tempête solaire majeure</b>.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les scientifiques ont mis <b>près de 5 mois</b> pour reprendre le contrôle du satellite en juin 1994.
+				</p>
+			</div>
+			<!-- Fin du vent solaire et des éruptions solaires -->
+
+
+
+			<!-- Les rayons cosmiques et les radiations -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Les rayons cosmiques et les radiations :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le <b>rayonnement cosmique</b> est le flux de particules chargées à haute énergie dont nous avons parlé précédemment qui circulent dans le vide spatial.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sur Terre, ce rayonnement est presque totalement <b>piégé par le champ magnétique </b> et par <b>l'atmosphère terrestre</b> (comme le montre le schéma ci-dessous où l'atmosphère est représentée par un dégradé de bleu). Ces rayons participent cependant à <b>\(15 \text{%}\) de la radioactivité naturelle totale</b> à la surface de la Terre (d'après <a class="w3-hover-text-green" href="http://www.lepoint.fr/science/la-chasse-aux-rayons-cosmiques-27-10-2014-1876012_25.php">La chasse aux rayons cosmiques de Sophie PUJAS du Journal Le POINT N° 21197</a>).
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sur Terre, ces rayons, en raison des <b>interactions avec l’atmosphère</b> et des durées de vie des particules les composant, ont une <b>énergie moyenne</b> d’environ <b>quelques \(\text{ GeV}\)</b> (Giga electron-Volt) et <b>notre corps</b> est en moyenne traversé par <b>100 000 muons</b> (<i>des particules élémentaires aux propriétés identiques aux électrons, mais de masse environ 200 fois supérieure</i>) <b>par heure</b>, ce qui n’est <b>pas dangereux</b> pour nous.
+				</p>
+
+				<br />
+				<div class="img-wrap w3-content">
+					<img class="w3-card-4 w3-animate-opacity" src="/imgs/rayons_cosmiques.png" style="width: 60%; margin-left: 17%; display: block;">
+
+					<div class="img-description" style="width: 60%; margin-left: 17%;">
+						<i class="copyright">&copy;Maxime Dherbécourt - Rayons cosmiques - <a href="/imgs/rayons_cosmiques.png">Tpe-micropesanteur</a></i>
+					</div>
+				</div>
+				<br />
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cependant, parfois des rayons <b>ayant une énergie 1 milliard de fois supérieur à la moyenne</b> frappent la Terre (provenant par exemple de supernovaes ou de sources inconnues).
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Par exemple, en 1991, un rayon de <b>\(320 \text{ milliards de GeV}\)</b> nous a touchés, une énergie tellement extrême que les scientifiques l’ont baptisé le rayon "<b>Oh My God</b>", "ce qui équivaut à l’énergie cinétique d’une <b>balle de tennis servie à \(160 \text{ km/h}\)</b>" (en moyenne, les balles de tennis tirées par des professionnels atteignent une vitesse de \(200 \text{ km/h}\)) raconte le Youtubeur Science Etonnante <a class="w3-hover-text-green" href="https://sciencetonnante.wordpress.com/2012/03/12/des-rayons-cosmiques-tres-energetiques-trop-energetiques/">sur son blog</a>.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alors que nous ne savons pas encore exactement d’où ils viennent, ces rayons peuvent être <b>très dangereux à cause de leur énergie élevée</b>. Ils sont susceptibles de <b>casser l’ADN</b>, de causer des <b>cancers</b>, des <b>malformations génétiques</b> (telles que la mucoviscidose par exemple, une maladie causant des problèmes respiratoires) et de provoquer d’importants <b>dégâts à nos cellules</b>.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans l’espace, il n’y a <b>pas le champ magnétique terrestre</b> permettant de protéger les astronautes des particules à haute énergie.
+				</p>
+			</div>
+			<!-- Fin des rayons cosmiques et les radiations -->
+
+
+
+			<!-- Les conséquences de l’exposition aux radiations -->
+			<br />
+			<div class="sub-partie">
+				<h2 class="underlined">
+					Les conséquences de l’exposition aux radiations :
+				</h2>
+
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dans son rapport de 2005 intitulé "<a class="w3-hover-text-green" href="https://ston.jsc.nasa.gov/collections/trs/_techrep/SP-2005-6113.pdf">Bioastronautics Roadmap</a>", la NASA définit à la page 30 <b>4 risques et domaines</b> de recherche majeurs des vols spatiaux <b>causés par la radioactivité</b> dans le cadre d’un vol spatial de <b>durée maximum de 3 ans</b> dans l’ISS, sur la Lune ou encore sur Mars (<i>passez votre curseur sur les images pour voir ces risques</i>) :
+				</p>
+			</div>
+		</div>
+
+		<div class="w3-container w3-padding-64" style="padding-top: 6px !important;">
+			<div class="w3-row-padding w3-center w3-margin-top">
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/cancer-cell.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>CANCÉROGÉNÈSE</h3>
+							<p>
+								<b>Cancérogénèse</b> : Augmentation du risque de cancer chez les astronautes résultant d’une "exposition professionnelle aux rayonnements".
+								<br />
+							</p>
+							<i class="copyright">&copy;Creative Commons by-nc-nd 2.0 UK par Anne Weston, LRI, CRUK - Division de cellules cancéreuses - <a href="https://www.flickr.com/photos/wellcomeimages">Wellcome Images</a></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/neurone.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>SNC</h3>
+							<p>
+								<b>Risques aigus et tardifs du système nerveux central (<i>SNC</i>)</b> : les radiations peuvent amener à des modifications du comportement et des troubles neurologiques à cause d’une "exposition professionnelle aux rayonnements ou par les effets combinés du rayonnement et d'autres facteurs de vol spatial".
+								<br />
+							</p>
+							<i class="copyright">&copy;Creative Commons by-nc-nd 2.0 UK par Benedict Campbell - Neurones - <a href="https://www.flickr.com/photos/wellcomeimages">Wellcome Images</a></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/coeur.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>RISQUES TISSULAIRES CHRONIQUES ET DÉGÉNÉRATIFS</h3>
+							<p>
+								<b>Risques tissulaires chroniques et dégénératifs</b> : l’exposition aux radiations peut entraîner des "maladies cardiaques, circulatoires ou digestives" pour les mêmes causes que le précédent risque.
+								<br />
+							</p>
+							<i class="copyright">&copy;Liya Graphics - Coeur - <a href="https://www.shutterstock.com/fr/g/liya%20graphics">Shutterstock</a></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-quarter">
+					<div class="img-wrap w3-content w3-card">
+						<img class="w3-card-4 w3-animate-opacity" src="/imgs/noentry.png" style="width: 100%; display: block;">
+
+						<div class="img-description">
+							<h3>RISQUES DE RAYONNEMENTS AIGUS</h3>
+							<p>
+								<b>Risques de rayonnements aigus</b> : en cas d’exposition aux radiations, des "syndromes de rayonnements aigus" peuvent survenir, se manifestant par des nausées, des vomissements, des comas, des convulsions puis très souvent la mort.
+							</p>
+							<i class="copyright">&copy;Yuriko Nakao - Zone de radiation - <a href="https://fr.reuters.com/">REUTERS</a></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin des conséquences de l’exposition aux radiations -->
+		</div>
+		<!-- FIN PARTIE E -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- PARTIE F. Conclusion -->
+		<div class="w3-content w3-container w3-padding-64" id="partie_F">
+			<h3 class="main-title w3-center">
+				F. Conclusion :
+			</h3>
+
+
+
+			<!-- Conclusion -->
+			<div class="sub-partie">
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comme nous venons de le voir, la vie dans l'espace, en micropesanteur et sans la protection du champs magnétique terrestre, peut avoir de nombreux <b> effets néfastes</b> sur le corps humain.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment limiter ces dangers dans l'espace ? Est-il possible de se préparer sur Terre ?
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous verrons cela dans la <b>partie II</b> de notre TPE.
+				</p>
+			</div>
+			<!-- Conclusion -->
+
+			<div class="main-text" style="padding-left: 35%; padding-top: 4%;">
+				<a href="/partie_II/#home" class="custom-button w3-button w3-black">
+					<i class="fa fa-cog w3-margin-right"></i>Accéder à la Partie II du TPE
+				</a>
+			</div>
+		</div>
+		<!-- FIN PARTIE F -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTROLE GENERAL DES VIDEOS -->
+<script type="text/javascript">
+	var cancel_wait = false;
+
+	function onYouTubeIframeAPIReady() {
+		cancel_wait = true;
+		point_lagrange_onYouTubeIframeAPIReady();
+		rat_experience_onYouTubeIframeAPIReady();
+		eruption_solaire_onYouTubeIframeAPIReady();
+	}
+
+	setTimeout(function(){
+		if(!cancel_wait) {
+			onYouTubeIframeAPIReady(); // "forcage du chargement de l'API youtube" après 6 secondes d'attente
+		}
+	}, 3000);
+</script>
+<!-- FIN DU CONTROLE GENERAL DES VIDEOS -->
+
+
+<%- include('../inc/footer') %>

@@ -1,0 +1,221 @@
+<%- include('../inc/header') %>
+
+
+		<!-- Header -->
+		<header class="w3-theme" id="myHeader">
+			<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+
+			<div class="image-background-1 w3-center">
+				<br />
+				<h4 class="global-title w3-animate-bottom">INTRODUCTION</h4>
+				<i style="color: #cbcbcb;">
+					<h1 class="w3-xlarge w3-animate-bottom">L’impact de l’espace sur la santé et sur l’équipement</h1>
+				</i>
+				<br />
+			</div>
+		</header>
+		<!-- Fin du header -->
+
+
+		<!-- Introduction -->
+		<div class="w3-content w3-container w3-padding-32" id="partie_B">
+			<h3 class="main-title w3-center">
+				INTRODUCTION :
+			</h3>
+
+
+
+			<!-- Introduction -->
+			<div class="sub-partie">
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depuis <b>1961</b>, de nombreux pays du monde envoient leurs astronautes dans l’espace.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce qui était <b>autrefois impossible</b> et <b>maintenant devenu réalisable</b>. Les voyages dans l’espace se multiplient et le nombre total d’astronautes qui y vont augmente (au total, 10 spationautes français sont allés dans l’espace dont Thomas Pesquet en 2016).
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mais la plus grande difficulté est le <b>corps humain</b> qui ne réagit pas de la même manière sur Terre que dans l’espace et demande donc <b>différents entraînements</b> afin de s’y préparer.
+				</p>
+			</div>
+			<!-- Fin de l'Introduction -->
+		</div>
+
+
+
+
+
+
+
+
+
+		<!-- VIDEO D'INTRODUCTION -->
+		<div class="w3-container w3-card-4 w3-blue-grey">
+			<script type="text/javascript">
+				var intro_video;
+				function intro_video_onYouTubeIframeAPIReady() {
+					document.getElementById('intro_video_loading').style = "display: none;";
+					document.getElementById('intro_video_control_buttons').style = "display: unset;";
+
+					intro_video = new YT.Player('intro_video_video', {
+						videoId: 'k4i4pRV4DJo',
+						events: {
+							onReady: intro_video_initialize
+						},
+						playerVars : {
+							disablekb: 1,
+							rel: 0,
+							showinfo: 0,
+							controls: 0
+						}
+					});
+
+					document.getElementById('intro_video_video').width = "100%";
+				}
+
+				var intro_video_time_update_interval;
+				function intro_video_initialize() {
+					clearInterval(intro_video_time_update_interval);
+					intro_video_time_update_interval = setInterval(function() {
+						intro_video_onTimeUpdate(intro_video.getCurrentTime());
+					}, 100);
+				}
+
+				function intro_video_onTimeUpdate(time) {
+					var text = intro_video_ontimeupdate(time);
+
+					if(
+						intro_video.getCurrentTime() >= (intro_video.getDuration() - 0.1)
+						&& intro_video_pointer == 6 // Valeur maximum du pointeur
+					) {
+						intro_video.pauseVideo();
+						intro_video.seekTo(0);
+						intro_video_pointer = 0;
+						return;
+					}
+
+					if(text != null) {
+						document.getElementById('intro_video_text').style = "display: true;";
+						document.getElementById('intro_video_text').style = "animation: 1s ease 0s 1 normal none running animatetop;";
+						document.getElementById('intro_video_text').innerHTML = text;
+						intro_video.pauseVideo();
+					}
+				}
+
+				var intro_video_pointer = 0;
+				function intro_video_ontimeupdate(currentTime) {
+					if(currentTime >= 0 && intro_video_pointer == 0) {
+						intro_video_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compilation de plusieurs vidéos du départ de Thomas Pesquet de la Terre et de son retour de l'ISS." + getStartButtonText();
+					}
+					if(currentTime >= 3 && intro_video_pointer == 1) {
+						intro_video_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sur cette partie de la vidéo, nous pouvons voir Thomas Pesquet et ses deux coéquipiers (Oleg Novitski et Peggy Whitson) se déplacer correctement, sans aides particulières et marcher vers leur fusée." + getStartButtonText();
+					}
+					else if(currentTime >= 14 && intro_video_pointer == 2) {
+						intro_video_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous observons le décollage de leur fusée, contenant le vaisseau spatial habité Soyouz, où les astronautes cités précedemment se situent." + getStartButtonText();
+					}
+					else if(currentTime >= 28 && intro_video_pointer == 3) {
+						intro_video_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ici, l'atterissage assez violent du Soyouz contenant Thomas Pesquet et Oleg Novitski. La poussière autour du vaisseau est tout à fait normale et provient du sable du sol." + getStartButtonText();
+					}
+					else if(currentTime >= 33 && intro_video_pointer == 4) {
+						intro_video_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A la sortie de son vaisseau, Thomas Pesquet doit être porté par des membres de l'ESA car il n'arrive pas à marcher." + getStartButtonText();
+					}
+					else if(currentTime >= 37 && intro_video_pointer == 5) {
+						intro_video_pointer++;
+						return "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plusieurs jours après, nous le voyons se déplacer, mais il est quand même accompagné de plusieurs personnes qui doivent le soutenir." + getStartButtonText();
+					}
+					return null;
+				}
+			</script>
+
+			<h2 class="video-title w3-center">Départ et retour de Thomas Pesquet - &copy;<a class="w3-hover-text-green" href="https://www.youtube.com/watch?v=lPMxbsx_6MI">ESA</a> et <a class="w3-hover-text-green" href="https://www.youtube.com/watch?v=ceBG-zvI2r4">NASA</a></h2>
+			<div class="w3-content" id="intro_video_div" style="max-width:800px; position:relative">
+				<div id="intro_video_loading">
+					<img class="loader" src="/imgs/loading-gif.gif">
+					<p class="loader-text">Si la vidéo ne charge pas, veuillez attendre une dizaine de secondes et si cela ne marche toujours pas, veuillez recharger la page.</p>
+				</div>
+
+				<div class="w3-card-4" id="intro_video_video"></div>
+				<div class="control-buttons" id="intro_video_control_buttons" style="display: none;">
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						intro_video.playVideo();
+						document.getElementById('intro_video_text').removeAttribute('style');
+
+						setTimeout(setAnimation, 1, 'intro_video_text');
+						setTimeout(undisplayText, 1000, 'intro_video_text');
+					">play_arrow</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="intro_video.pauseVideo()">pause</i>
+					<i class="material-icons" style="cursor: pointer;" onclick="
+						intro_video.seekTo(0);
+						intro_video_pointer = 0;
+						intro_video.pauseVideo();
+					">replay</i>
+				</div>
+
+				<p id="intro_video_text" class="video_text"></p>
+			</div>
+		</div>
+		<!-- FIN DE LA VIDEO D'INTRODUCTION -->
+
+
+
+		<!-- Introduction -->
+		<div class="w3-content w3-container w3-padding-64" id="partie_B">
+			<!-- Introduction -->
+			<div class="sub-partie">
+				<p class="main-text w3-content">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette vidéo nous montre donc qu’aller dans l’espace a des <b>conséquences</b> sur le <b>corps humain</b>.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Problématique : <i>Voyager dans l’espace ? Possible ... mais à quel prix ?</i></b>
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L’impact de l’espace sur la <b>santé</b> et les <b>équipements</b> est considérable (<a href="/partie_I/#home" class="w3-hover-text-green"><i>Partie I</i></a>), ce qui explique le nombre d’exercices que les astronautes pratiquent avant leur voyage.
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les scientifiques travaillent également à <b>limiter ces effets</b> en utilisant de nombreuses machines devenues indispensables au bon déroulement des missions spatiales ainsi qu’une importante <b>préparation sur Terre</b> (<a href="/partie_II/#home" class="w3-hover-text-green"><i>Partie II</i></a>).
+					<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toutes ces découvertes mènent à un seul et même but : une <b>exploration spatiale du futur et innovante</b> (<a href="/partie_III/#home" class="w3-hover-text-green"><i>Partie III</i></a>).
+				</p>
+			</div>
+			<!-- Fin de l'Introduction -->
+
+			<div class="main-text" style="padding-left: 35%; padding-top: 4%;">
+				<a href="/partie_I/#home" class="custom-button w3-button w3-black">
+					<i class="fa fa-cog w3-margin-right"></i>Accéder à la Partie I du TPE
+				</a>
+			</div>
+		</div>
+		<!-- Fin de l'Introduction -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTROLE GENERAL DES VIDEOS -->
+<script type="text/javascript">
+	var cancel_wait = false;
+
+	function onYouTubeIframeAPIReady() {
+		cancel_wait = true;
+		intro_video_onYouTubeIframeAPIReady();
+	}
+
+	setTimeout(function(){
+		if(!cancel_wait) {
+			onYouTubeIframeAPIReady(); // "forcage du chargement de l'API youtube" après 6 secondes d'attente
+		}
+	}, 3000);
+</script>
+<!-- FIN DU CONTROLE GENERAL DES VIDEOS -->
+
+<%- include('../inc/footer') %>

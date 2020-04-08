@@ -1,0 +1,157 @@
+.main-title {
+	background-clip: border-box;
+	color: black;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	font-weight: 800;
+	font-size: 300%;
+	font-family: arial, helvetica;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/* BACKGROUND IMAGES */
+.image-background-1 {
+	background: url(/imgs/background-1.jpg) -80px -80px;
+}
+
+.image-background-2 {
+	background: url(/imgs/background-2.jpg) -80px -80px;
+}
+
+.image-background-3 {
+	background: url(/imgs/background-3.jpg) -80px -80px;
+}
+
+.image-background-4 {
+	background: url(/imgs/background-4.jpg) -80px -80px;
+}
+
+.image-background-5 {
+	background: url(/imgs/background-5.jpg) -80px -80px;
+}
+
+.image-background-6 {
+	background: url(/imgs/background-6.jpg) -80px -80px;
+}
+
+.image-background-7 {
+	background: url(/imgs/background-7.jpg) -80px -80px;
+}
+
+.image-background-8 {
+	background: url(/imgs/background-8.jpg) -80px -80px;
+}
+
+.image-background-9 {
+	background: url(/imgs/background-9.jpg) -80px -80px;
+}
+
+.image-background-10 {
+	background: url(/imgs/background-10.jpg) -80px -80px;
+}
+
+
+
+.image-background-1-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-2-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-3-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-4-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-5-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-6-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-7-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-8-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-9-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}
+
+.image-background-10-font {
+	background-clip: border-box;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	background-color: black;
+}

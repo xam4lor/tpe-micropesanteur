@@ -1,0 +1,142 @@
+body {
+	font-family: "Lato", sans-serif
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+@keyframes fadedown {
+	from {
+		top:0;
+		opacity:1
+	}
+
+	to {
+		top:-300px;
+		opacity:0
+	}
+}
+
+.control-buttons {
+	padding-left: 45%;
+}
+
+.video-title {
+	text-decoration: underline;
+}
+
+.loader {
+	padding-left: 44%;
+}
+
+.loader-text {
+	text-align: center;
+}
+
+.video_text {
+	padding-left: 5%;
+}
+
+.custom-button {
+	border-radius: 20px;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+
+@media (max-width: 449px) {
+	.global-title {
+		font-weight: 700;
+		font-size: 30px !important;
+	}
+}
+@media (min-width: 450px) {
+	.global-title {
+		font-weight: 700;
+		font-size: 48px !important;
+	}
+}
+
+.main-text {
+	color: rgba(44, 44, 44, 0.89);
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+
+
+/* Texte lors hover image */
+.img-description {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.83);
+	width: 100%;
+	color: white;
+
+	padding-top: 4px !important;
+	padding-bottom: 2px !important;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+
+	font-size: 15px !important;
+	letter-spacing: 1px;
+	font-family: "Segoe UI", Arial, sans-serif !important;
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+
+	-moz-transition: opacity .2s, visibility .2s;
+	transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap {
+	position: relative;
+}
+
+.img-wrap:hover .img-description {
+	visibility: visible;
+	opacity: 1;
+}
+
+.copyright {
+	font-size: 13px;
+}
+
+
+.main-title-2 {
+	font-size: 38px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.second-title {
+	padding-left: 40px;
+	font-size: 34px;
+	font-weight: 700;
+	text-decoration: underline indianred;
+}
+
+.smallest-party {
+	padding-left: 20px;
+	font-size: 26px;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+blockquote {
+	font-style:normal;
+	margin-left:32px;
+	padding-left: 48px;
+	background:url('/imgs/blockquote.png');
+	background-repeat:no-repeat;
+	min-height: 30px;  
+}
+
+.flag-title {
+	cursor: pointer;
+	width: 40px;
+}

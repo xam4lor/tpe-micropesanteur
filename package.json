@@ -1,0 +1,37 @@
+{
+  "name": "tpe-micropesanteur",
+  "version": "7.0.0",
+  "description": "TPE sur 'Voyager dans l'espace ? Possible ... mais à quel prix ?'",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/xam4lor/tpe-micropesanteur"
+  },
+  "keywords": [
+    "tpe",
+    "micropesanteur",
+    "microgravité",
+    "apesanteur",
+    "espace",
+    "voyage",
+    "mars",
+    "SpaceX",
+    "futur",
+    "santé",
+    "danger"
+  ],
+  "author": "Eva M., Marie M., Maxime D., Sirielle W.",
+  "license": "CC-BY-NC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ejs": "^2.6.2",
+    "sitemap": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

@@ -1,0 +1,134 @@
+<%- include('inc/header_full') %>
+
+		<!-- SOMMAIRE -->
+		<div class="w3-center">
+			<br />
+			<h2 class="underlined">SOMMAIRE</h2>
+			<p>
+				TPE réalisé par <b>Eva, Marie, Maxime et Sirielle</b>.
+				<br /><i>Cliquez sur une icône ou sur le titre d'une partie pour vous rediriger vers la partie correspondante.</i>
+			</p>
+			<br />
+		</div>
+
+
+		<hr />
+
+
+		<!-- Précisions -->
+		<div class="w3-content w3-container" id="partie_B">
+			<!-- Précisions -->
+			<div class="sub-partie">
+				<h3 class="w3-center" id="precisions_text" onclick="customChangeDisplay();" style="cursor: pointer;">
+					<i class="fa fa-plus-circle"></i> Précisions (cliquez sur le plus pour afficher) <i class="fa fa-plus-circle w3-margin-right"></i>
+				</h3>
+
+				<p class="main-text w3-content" id="displayCustomText" style="display: none;">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le site fonctionne sur <b>ordinateur</b> et sur <b>téléphone</b>. Cependant, il est vivement conseillé d’utiliser un ordinateur.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veuillez consulter le site sur <b>Chrome</b> ou sur une <b>version récente de Firefox</b> (supérieure ou égale à la version 57). De plus le site ne fonctionne pas sur Internet Explorer.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les <b>sources et crédits</b> des images sont indiqués <b>lors d’un clic ou d’un survol de l’image</b> souhaitée. Toutes les images utilisées en fond pour le design de ce site appartiennent à la NASA et donc au domaine public.
+
+					<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les videos comprennent un système de texte qui <b>s’affiche progressivement sous la vidéo</b> en fonction du temps. Lorsque la vidéo est sur <b>pause</b>, <b>lire le texte</b> en dessous de cette dernière puis appuyer sur le <b>bouton Play <i class="fa fa-play"></i> pour continuer la lecture</b>.
+				</p>
+			</div>
+			<!-- Fin des précisions -->
+		</div>
+		<!-- Fin des précisions -->
+
+
+
+
+
+
+		<div class="w3-row-padding w3-center w3-margin-top">
+			<div class="w3-card w3-container" style="min-height: 200px">
+				<a class="w3-hover-text-blue-grey" href="/introduction/#home">
+					<h3 class="underlined">Introduction</h3>
+				</a>
+				<br />
+				<i class="<%= 'fa fa-info-circle image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size: 120px; cursor: pointer;" onclick="document.location = '/introduction/#home'"></i>
+				<p class="main-text w3-content">Introduction de notre TPE</p>
+			</div>
+		</div>
+
+
+
+		<div class="w3-row-padding w3-center w3-margin-top">
+			<div class="w3-third">
+				<div class="w3-card w3-container" style="min-height: 290px">
+					<a class="w3-hover-text-blue-grey" href="/partie_I/#home">
+						<h3 class="underlined">Partie I</h3>
+					</a>
+					<br />
+					<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size: 120px; cursor: pointer;" onclick="document.location = '/partie_I/#home'"></i>
+					<p class="main-text w3-content">L’impact de l’espace sur la santé et sur l’équipement</p>
+				</div>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-card w3-container" style="min-height: 290px">
+					<a class="w3-hover-text-blue-grey" href="/partie_II/#home">
+						<h3 class="underlined">Partie II</h3>
+					</a>
+					<br />
+					<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size: 120px; cursor: pointer;" onclick="document.location = '/partie_II/#home'"></i>
+					<p class="main-text w3-content">Comment se préparer sur Terre et comment limiter ces effets dans l’espace</p>
+				</div>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-card w3-container" style="min-height: 290px">
+					<a class="w3-hover-text-blue-grey" href="/partie_III/#home">
+						<h3 class="underlined">Partie III</h3>
+					</a>
+					<br />
+					<i class="<%= 'fa fa-cog image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size: 120px; cursor: pointer;" onclick="document.location = '/partie_III/#home'"></i>
+					<p class="main-text w3-content">Le futur de l’exploration spatiale</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="w3-row-padding w3-center w3-margin-top">
+			<div class="w3-half">
+				<div class="w3-card w3-container" style="min-height: 200px">
+					<a class="w3-hover-text-blue-grey" href="/conclusion/#home">
+						<h3 class="underlined">Conclusion</h3>
+					</a>
+					<br />
+					<i class="<%= 'fa fa-file image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size: 120px; cursor: pointer;" onclick="document.location = '/conclusion/#home'"></i>
+					<p class="main-text w3-content">Conclusion et ouverture de notre TPE</p>
+				</div>
+			</div>
+
+			<div class="w3-half">
+				<div class="w3-card w3-container" style="min-height: 200px">
+					<a class="w3-hover-text-blue-grey" href="/sources/#home">
+						<h3 class="underlined">Sources</h3>
+					</a>
+					<br />
+					<i class="<%= 'fa fa-book image-background-' + Math.round(Math.random()*9+1) + '-font w3-margin-bottom w3-text-theme' %>" style="font-size: 120px; cursor: pointer;" onclick="document.location = '/sources/#home'"></i>
+					<p class="main-text w3-content">Sources de notre TPE</p>
+				</div>
+			</div>
+		</div>
+		<!-- FIN DU SOMMAIRE -->
+
+
+
+		<script type="text/javascript">
+			function customChangeDisplay() {
+				if(document.getElementById("displayCustomText").style.display == "none") {
+					document.getElementById("precisions_text").innerHTML = '<i class="fa fa-minus-circle"></i> Précisions (cliquez sur le moins pour refermer) <i class="fa fa-minus-circle w3-margin-right"></i>';
+					document.getElementById("displayCustomText").style.display = "";
+				}
+				else {
+					document.getElementById("precisions_text").innerHTML = '<i class="fa fa-plus-circle"></i> Précisions (cliquez sur le plus pour afficher) <i class="fa fa-plus-circle w3-margin-right"></i>';
+					document.getElementById("displayCustomText").style.display = "none";
+				}
+			}
+		</script>
+
+<%- include('inc/footer') %>
